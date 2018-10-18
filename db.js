@@ -5,7 +5,7 @@ var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectId;
 // var url = "mongodb://localhost:27017/";
 //var url="mongodb://kulukdatabaseuser:.Kuluk28@ds139138.mlab.com:39138/heroku_p2cqk5m3"
-var url="mongodb://david6984:.Marlboro6984@ds123956.mlab.com:23956/factura"
+var url="mongodb://factdbuser:dbuser123456@ds161146.mlab.com:61146/heroku_0wbzqv0h"
 
 MongoClient.connect(url, function(err, db) {
     if (err) throw err;
