@@ -1,0 +1,25 @@
+<div id="container">
+  <div ng2-carouselamos class="slides-wrapper"
+  [items]="items"
+  [width]="500"
+  [$prev]="prev"
+  [$next]="next"
+  [$item]="item"
+  >  
+  </div>
+  <ng-template #prev>
+      <img src="assets/left-arrow.png" id="left">
+  </ng-template>
+  <ng-template #next>
+      <img src="assets/right-arrow.png" id="right">
+  </ng-template>
+  <ng-template #item let-item let-i="index">
+      <div class="items col-12 col-lg-12">
+          <img src="{{item.imagenUrl}}"  class="items-img" />
+            <div class="carousel-caption d-none d-md-block" *ngIf="item.shortText || item.longText">
+                <h3>{{item.shortText}}</h3> 
+                <p>{{item.longText}}</p>
+            </div> 
+      </div>
+  </ng-template>
+</div>

@@ -1,0 +1,62 @@
+<div class="container">    
+		<div class="row">
+			<div class="col-md-8">				
+				<div class="panel panel-default  panel--styled">
+					<div class="panel-body">
+						<div class="col-md-12 panelTop">	
+							<div class="col-md-6">	
+								<img class="img-fluid-row" src="{{producto.imgurl}}" alt=""/>
+							</div>
+							<div class="col-md-12">	
+								<h4>{{producto.nombre}}</h4>
+							</div>
+							<div class="col-md-12">	
+									<p>{{producto.descripcion}}</p>
+							</div>
+						</div>
+						
+						<div class="col-md-12 panelBottom">
+							<div class="col-md-4 text-left">
+								<h5>Precio <span class="itemPrice">₡{{producto.precio}}</span></h5>
+							</div>
+						</div>
+						<div class="col-md-12 panelBottom inner" *ngIf="islogged">
+							<div class="col-md-4 inner" >
+									<button type="button" class="btn btn-primary" (click)="editar()">Editar</button>
+							</div>
+							<div class="col-md-6 inner">
+								<button type="button" class="btn btn-danger" (click)="borrar()"><span *ngIf="isDeleting">...</span><span *ngIf="!isDeleting">Eliminar</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<br>
+<!--
+<div class="row">
+	<img  src="{{producto.imgurl}}"  class="img-fluid-row" /> 
+</div>
+<div class="row">
+	<div class="col-12 col-lg-6"> <strong>{{producto.nombre}}</strong></div>
+</div>
+<div class="row">
+	<div class="col-12 col-lg-6" > {{producto.precio}}</div>
+</div>
+<div class="row">
+	<div class="col-12 col-lg-6" ><pre>{{producto.descripcion}}</pre> </div>
+</div>
+<div class="row" *ngIf="islogged">
+	<div class="col-12 actions">
+		<div class="row">
+			<div class="col-3 text-center">
+				<button type="button" class="btn btn-primary" (click)="editar()">Editar</button>
+			</div>
+			<div class="col-6 text-center">
+				<button type="button" class="btn btn-danger" (click)="borrar()"><span *ngIf="isDeleting">...</span><span *ngIf="!isDeleting">Eliminar</span></button>
+			</div>
+		</div>
+	</div>	
+</div>
+-->

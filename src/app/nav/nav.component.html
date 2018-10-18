@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-md navbar-light bg-faded">
+  <a class="navbar-brand" href="#">Factura</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="/productos" routerLinkActive="active">Productos</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link"  routerLink="/lugares" routerLinkActive="active">Encuentranos</a>
+      </li>   
+      <li class="nav-item">
+          <a *ngIf="islogged" class="nav-link"  routerLink="/usuarios"  routerLinkActive="active">Usuarios</a>
+      </li>    
+      <li class="nav-item">
+          <a class="nav-link disabled" routerLink="/about" routerLinkActive="active">Acerca</a>
+      </li>    
+            <!-- Dropdown -->
+            <li class="nav-item dropdown"  *ngIf="islogged">
+              <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" >
+                Mantenimiento
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" routerLink="/slider" routerLinkActive="active">Carousel</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+                <a class="dropdown-item" href="#">Link 3</a>
+              </div>
+            </li>
+            <!--
+      <li class="nav-item">
+         <a class="nav-link disabled" routerLink="/info" routerLinkActive="active">Info</a>
+      </li>
+      -->
+      <li class="nav-item">
+         <a class="nav-link" routerLink="/usuariologin" routerLinkActive="active" ><span *ngIf="!islogged">Acceder</span><span *ngIf="islogged">Salir</span></a> 
+      </li>      
+    </ul>
+  </div>  
+</nav>
+<br>
+
+
+
