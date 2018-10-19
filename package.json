@@ -30,6 +30,7 @@
     "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
     "csurf": "^1.9.0",
+    "dezalgo": "^1.0.3",
     "express": "^4.16.2",
     "jsonwebtoken": "^8.1.0",
     "latest": "^0.2.0",
