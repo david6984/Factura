@@ -25,6 +25,7 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "ansi": "^0.3.1",
     "asyncawait": "^1.0.6",
     "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
