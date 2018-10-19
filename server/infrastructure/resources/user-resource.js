@@ -1,13 +1,13 @@
 var MongoClient = require('mongodb').MongoClient;
 var ObjectId = require('mongodb').ObjectId;
 // var url = "mongodb://localhost:27017/";
-var url="mongodb://kulukdatabaseuser:.Kuluk28@ds139138.mlab.com:39138/heroku_p2cqk5m3"
+var url="mongodb://factdbuser:dbuser123456@ds161146.mlab.com:61146/heroku_0wbzqv0h"
 var async = require('asyncawait/async');
 var await = require('asyncawait/await');
 
 function getUsers() {
     var db = await(MongoClient.connect(url)); 
-    var dbase = db.db("heroku_p2cqk5m3");
+    var dbase = db.db("heroku_0wbzqv0h");
     var users = await(dbase.collection("users").find({}).toArray());
     db.close();
     return users;
@@ -15,7 +15,7 @@ function getUsers() {
 
 function getUser(id) {
     var db = await(MongoClient.connect(url)); 
-    var dbase = db.db("heroku_p2cqk5m3");
+    var dbase = db.db("heroku_0wbzqv0h");
     var user = await(dbase.collection("users").findOne({_id: new ObjectId(id)}));
     db.close();
     return user;
@@ -24,7 +24,7 @@ function getUser(id) {
 function getUserByUserName(username) {
     console.log('entro a bd buscar user');
     var db = await(MongoClient.connect(url)); 
-    var dbase = db.db("heroku_p2cqk5m3");
+    var dbase = db.db("heroku_0wbzqv0h");
     var user = await(dbase.collection("users").findOne({_usuario: new ObjectId(usuario)}));
     db.close();
     return user;
@@ -33,7 +33,7 @@ function getUserByUserName(username) {
 
 function deleteUser(id) {
     var db = await(MongoClient.connect(url)); 
-    var dbase = db.db("heroku_p2cqk5m3");
+    var dbase = db.db("heroku_0wbzqv0h");
     try{
         var user = await(dbase.collection("users").deleteOne({_id: new ObjectId(id)}));    
     }catch(e){
@@ -46,7 +46,7 @@ function deleteUser(id) {
 
 function updateUser(user) {
     var db = await(MongoClient.connect(url)); 
-    var dbase = db.db("heroku_p2cqk5m3");
+    var dbase = db.db("heroku_0wbzqv0h");
     var id = user._id;
     delete user._id; // no se puede enviar el ID de nuevo porque da un error de que _id es inmutable
     var user = await(dbase.collection("users").replaceOne({_id: new ObjectId(id)}, user, {upsert: true}));
@@ -58,7 +58,7 @@ function updateUser(user) {
 function addUser(user) {
     console.log('add user',user)
     var db = await(MongoClient.connect(url)); 
-    var dbase = db.db("heroku_p2cqk5m3");
+    var dbase = db.db("heroku_0wbzqv0h");
     var user = await(dbase.collection("users").insertOne(user));
     db.close();
     return user;
