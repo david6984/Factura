@@ -15,7 +15,7 @@ MongoClient.connect(url, function(err, db) {
 
 function addCollections(db){
 	// var dbase = db.db("kulukdb"); //here
-	var dbase= db.db("factura");
+	var dbase= db.db("heroku_0wbzqv0h");
 	dbase.createCollection("products");
 	dbase.createCollection("places");
 	dbase.createCollection("sliders");
