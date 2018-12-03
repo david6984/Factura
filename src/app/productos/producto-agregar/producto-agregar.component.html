@@ -24,9 +24,9 @@
 			[(ngModel)]="producto.precio"  
 			#precio="ngModel" 
 			required pattern="[0-9]*">
-		<!--<div [hidden]="precio.valid || precio.pristine" class="alert alert-danger" *ngIf="precio.errors && precio.errors.required">
+		<div [hidden]="precio.valid || precio.pristine" class="alert alert-danger" *ngIf="precio.errors && precio.errors.required">
 			El precio es requerido
-		</div>-->
+		</div>
 		<div [hidden]="precio.valid || precio.pristine" class="alert alert-danger" *ngIf="precio.errors && precio.errors.pattern">
 			El precio deben ser números
 		</div>
