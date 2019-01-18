@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
 //Import del archivo que tiene las rutas, se debe agregar a los imports
 import { AppRoutingModule } from './app.routes.module';
 
