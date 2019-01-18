@@ -27,7 +27,7 @@ module.exports = ""
 /***/ "./src/app/about/about.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n\t<div class=\"page-title row\">\n\t\t<h2 class=\"col-5\">Acerca</h2>\n\t</div>\n\t<p>\n\t  Kuluk inicia en 2016, luego de años de inquietudes y búsqueda de inspiración. Sus productos son 100% naturales y desarrollados bajo un concepto de conciencia ambiental para el cuidado personal. \n\t\tKuluk selecciona con rigurosidad los ingredientes provenientes de pequeños productores a nivel nacional, enlazando la cosmética artesanal con los secretos de la farmacognosia. Unimos este conocimiento con técnicas para crear fórmulas, que hacen de Kuluk una alternativa para aquellos que busquen su bienestar.\n\t</p>\n</div>\n"
+module.exports = "<div>\n\t<div class=\"page-title row\">\n\t\t<h2 class=\"col-5\">Acerca</h2>\n\t</div>\n\t<p>\n\t\tDBSoft inicia en el 2018, como una iniciativa de desarrollo profesional y creación de un producto innovador realizado como parte de un proyecto universitario. Una vez que se inicia este proyecto los desarrolladores involucrados se preguntan y por qué solamente dejar esto como un proyecto, es aquí donde nace la idea de materializar este y los resultados obtenidos son mejor que los esperados. Aunque aun el Proyecto se encuentra en una etapa muy joven de su desarrollo, los implicados esperan obtener grandes frutos a futuro.\n\t</p>\n</div>\n"
 
 /***/ }),
 
@@ -148,15 +148,16 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__login_login_component__ = __webpack_require__("./src/app/login/login.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__slider_slider_agregar_slider_agregar_component__ = __webpack_require__("./src/app/slider/slider-agregar/slider-agregar.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__slider_slider_display_slider_display_component__ = __webpack_require__("./src/app/slider/slider-display/slider-display.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_productos_service__ = __webpack_require__("./src/app/services/productos.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_usuarios_service__ = __webpack_require__("./src/app/services/usuarios.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_lugares_service__ = __webpack_require__("./src/app/services/lugares.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_slider_service__ = __webpack_require__("./src/app/services/slider.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__shared_text_contains_directive__ = __webpack_require__("./src/app/shared/text-contains.directive.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31_ng2_carouselamos__ = __webpack_require__("./node_modules/ng2-carouselamos/dist/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__services_datasharing_service__ = __webpack_require__("./src/app/services/datasharing.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__factura_factura_component__ = __webpack_require__("./src/app/factura/factura.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_productos_service__ = __webpack_require__("./src/app/services/productos.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_usuarios_service__ = __webpack_require__("./src/app/services/usuarios.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_lugares_service__ = __webpack_require__("./src/app/services/lugares.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__services_data_service__ = __webpack_require__("./src/app/services/data.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__services_auth_service__ = __webpack_require__("./src/app/services/auth.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__services_slider_service__ = __webpack_require__("./src/app/services/slider.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__shared_text_contains_directive__ = __webpack_require__("./src/app/shared/text-contains.directive.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32_ng2_carouselamos__ = __webpack_require__("./node_modules/ng2-carouselamos/dist/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__services_datasharing_service__ = __webpack_require__("./src/app/services/datasharing.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -170,6 +171,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 //Import del archivo que tiene las rutas, se debe agregar a los imports
 
 // Componentes que deben ser agregados a los declarations
+
 
 
 
@@ -215,7 +217,7 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_12__usuarios_usuarios_component__["a" /* UsuariosComponent */],
                 __WEBPACK_IMPORTED_MODULE_13__usuarios_usuario_display_usuario_display_component__["a" /* UsuarioDisplayComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__usuarios_usuario_agregar_usuario_agregar_component__["a" /* UsuarioAgregarComponent */],
-                __WEBPACK_IMPORTED_MODULE_30__shared_text_contains_directive__["a" /* TextContainsValidator */],
+                __WEBPACK_IMPORTED_MODULE_31__shared_text_contains_directive__["a" /* TextContainsValidator */],
                 __WEBPACK_IMPORTED_MODULE_15__lugares_lugares_component__["a" /* LugaresComponent */],
                 __WEBPACK_IMPORTED_MODULE_16__lugares_lugares_display_lugares_display_component__["a" /* LugaresDisplayComponent */],
                 __WEBPACK_IMPORTED_MODULE_17__lugares_lugares_agregar_lugares_agregar_component__["a" /* LugaresAgregarComponent */],
@@ -224,7 +226,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_21__login_login_component__["a" /* LoginComponent */],
                 __WEBPACK_IMPORTED_MODULE_18__carousel_carousel_component__["a" /* CarouselComponent */],
                 __WEBPACK_IMPORTED_MODULE_22__slider_slider_agregar_slider_agregar_component__["a" /* SliderAgregarComponent */],
-                __WEBPACK_IMPORTED_MODULE_23__slider_slider_display_slider_display_component__["a" /* SliderDisplayComponent */]
+                __WEBPACK_IMPORTED_MODULE_23__slider_slider_display_slider_display_component__["a" /* SliderDisplayComponent */],
+                __WEBPACK_IMPORTED_MODULE_24__factura_factura_component__["a" /* FacturaComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -232,16 +235,16 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["e" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["b" /* HttpModule */],
-                __WEBPACK_IMPORTED_MODULE_31_ng2_carouselamos__["a" /* Ng2CarouselamosModule */]
+                __WEBPACK_IMPORTED_MODULE_32_ng2_carouselamos__["a" /* Ng2CarouselamosModule */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_24__services_productos_service__["a" /* ProductosService */],
-                __WEBPACK_IMPORTED_MODULE_25__services_usuarios_service__["a" /* UsuariosService */],
-                __WEBPACK_IMPORTED_MODULE_26__services_lugares_service__["a" /* LugaresService */],
-                __WEBPACK_IMPORTED_MODULE_29__services_slider_service__["a" /* SliderService */],
-                __WEBPACK_IMPORTED_MODULE_27__services_data_service__["a" /* DataService */],
-                __WEBPACK_IMPORTED_MODULE_28__services_auth_service__["a" /* AuthService */],
-                __WEBPACK_IMPORTED_MODULE_32__services_datasharing_service__["a" /* DatasharingService */]
+                __WEBPACK_IMPORTED_MODULE_25__services_productos_service__["a" /* ProductosService */],
+                __WEBPACK_IMPORTED_MODULE_26__services_usuarios_service__["a" /* UsuariosService */],
+                __WEBPACK_IMPORTED_MODULE_27__services_lugares_service__["a" /* LugaresService */],
+                __WEBPACK_IMPORTED_MODULE_30__services_slider_service__["a" /* SliderService */],
+                __WEBPACK_IMPORTED_MODULE_28__services_data_service__["a" /* DataService */],
+                __WEBPACK_IMPORTED_MODULE_29__services_auth_service__["a" /* AuthService */],
+                __WEBPACK_IMPORTED_MODULE_33__services_datasharing_service__["a" /* DatasharingService */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
@@ -270,12 +273,14 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__ = __webpack_require__("./src/app/footer/footer.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__slider_slider_component__ = __webpack_require__("./src/app/slider/slider.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__nav_nav_component__ = __webpack_require__("./src/app/nav/nav.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__factura_factura_component__ = __webpack_require__("./src/app/factura/factura.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -325,6 +330,10 @@ var ROUTES = [
         component: __WEBPACK_IMPORTED_MODULE_8__footer_footer_component__["a" /* FooterComponent */]
     },
     {
+        path: 'factura',
+        component: __WEBPACK_IMPORTED_MODULE_11__factura_factura_component__["a" /* FacturaComponent */]
+    },
+    {
         path: '**',
         redirectTo: ''
     }
@@ -363,7 +372,7 @@ module.exports = "#container{\n\twidth: 100%;\n\tmargin: 5em auto;\n\tpadding: 0
 /***/ "./src/app/carousel/carousel.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"container\">\n  <div ng2-carouselamos class=\"slides-wrapper\"\n  [items]=\"items\"\n  [width]=\"500\"\n  [$prev]=\"prev\"\n  [$next]=\"next\"\n  [$item]=\"item\"\n  >  \n  </div>\n  <ng-template #prev>\n      <img src=\"assets/left-arrow.png\" id=\"left\">\n  </ng-template>\n  <ng-template #next>\n      <img src=\"assets/right-arrow.png\" id=\"right\">\n  </ng-template>\n  <ng-template #item let-item let-i=\"index\">\n      <div class=\"items col-12 col-lg-12\">\n          <img src=\"{{item.imagenUrl}}\"  class=\"items-img\" />\n            <div class=\"carousel-caption d-none d-md-block\" *ngIf=\"item.shortText || item.longText\">\n                <h3 style=\"background-color: #cc3c10;\">{{item.shortText}}</h3> \n                <p style=\"background-color: #cc3c10;\">{{item.longText}}</p>\n            </div> \n      </div>\n  </ng-template>\n</div>\n"
+module.exports = "<div id=\"container\">\n  <div ng2-carouselamos class=\"slides-wrapper\"\n  [items]=\"items\"\n  [width]=\"500\"\n  [$prev]=\"prev\"\n  [$next]=\"next\"\n  [$item]=\"item\"\n  >  \n  </div>\n  <ng-template #prev>\n      <img src=\"assets/left-arrow.png\" id=\"left\">\n  </ng-template>\n  <ng-template #next>\n      <img src=\"assets/right-arrow.png\" id=\"right\">\n  </ng-template>\n  <ng-template #item let-item let-i=\"index\">\n      <div class=\"items col-12 col-lg-12\">\n          <img src=\"{{item.imagenUrl}}\"  class=\"items-img\" />\n          <br>\n            <div class=\"carousel-caption d-none d-md-block\" *ngIf=\"item.shortText || item.longText\">\n                <h3 style=\"color: #cc3c10;\">{{item.shortText}}</h3> \n                <p style=\"color: #cc3c10;\">{{item.longText}}</p>\n            </div> \n      </div>\n  </ng-template>\n</div>\n"
 
 /***/ }),
 
@@ -431,6 +440,56 @@ var CarouselComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/factura/factura.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/factura/factura.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  factura works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/factura/factura.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacturaComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FacturaComponent = /** @class */ (function () {
+    function FacturaComponent() {
+    }
+    FacturaComponent.prototype.ngOnInit = function () {
+    };
+    FacturaComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-factura',
+            template: __webpack_require__("./src/app/factura/factura.component.html"),
+            styles: [__webpack_require__("./src/app/factura/factura.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FacturaComponent);
+    return FacturaComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/footer/footer.component.css":
 /***/ (function(module, exports) {
 
@@ -441,7 +500,7 @@ module.exports = ".a_facebook {\n    color: #3B5998;\n}\n\n.a_twitter{\n    colo
 /***/ "./src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<!--Footer-->\n<footer class=\"page-footer font-small blue-grey lighten-5 pt-0\">\n\n    <div style=\"background-color:#9bce9b;\">\n        <div class=\"container \">\n            <!--Grid row-->\n            <div class=\"row py-2 d-flex align-items-center\">\n\n                <!--Grid column-->\n                <div class=\"col-12 col-md-5 text-left mb-2 mb-md-0 mt-0\">\n                    <h6 class=\"mb-0 white-text text-center text-md-left\">\n                        <strong>Siguenos en redes sociales!</strong>\n                    </h6>\n                </div>\n                <!--Grid column-->\n\n                <!--Grid column-->\n                <div class=\"col-12 col-md-7  text-center text-md-right\">\n                    <!--Facebook-->\n                    <a class=\"a_facebook fb-ic ml-0\" href=\"https://www.facebook.com/kulukcostarica/\" target=\"_blank\">\n                        <i class=\"fa fa-facebook-square mr-lg-4\"> </i>\n                    </a>\n                    <!--Twitter-->\n                    <a class=\"a_twitter tw-ic\">\n                        <i class=\"a_twitter fa fa-twitter white-text mr-lg-4\"> </i>\n                    </a>\n                    <!--Google +-->\n                    <a class=\"a_google_plus  gplus-ic\">\n                        <i class=\"a_google_plus fa fa-google-plus white-text mr-lg-4\"> </i>\n                    </a>\n                    <!--Linkedin-->\n                    <a class=\"a_linkedin li-ic\">\n                        <i class=\"a_linkedin fa fa-linkedin white-text mr-lg-4\"> </i>\n                    </a>\n                    <!--Instagram-->\n                    <a class=\"a_instagram  ins-ic\" href=\"https://www.instagram.com/kulukcostarica/?hl=en\" target=\"_blank\">\n                        <i class=\"fa fa-instagram white-text mr-lg-4\"> </i>\n                    </a>\n                </div>\n                <!--Grid column-->\n\n            </div>\n            <!--Grid row-->\n        </div>\n    </div>\n\n    <!--Footer Links-->\n    <div class=\"container mt-3 mb-3 text-center text-md-left\">\n        <div class=\"row mt-2\">\n\n            <!--First column-->\n            <div class=\"col-md-6 col-lg-6 col-xl-6 mb-4 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>DBSoft | Ingenieria a tu alcance!! </strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-2 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p></p>\n            </div>\n            <!--/.First column-->\n\n            <!--Second column-->\n            <!-- <div class=\"col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>Products</strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-4 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">MDBootstrap</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">MDWordPress</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">BrandFlow</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Bootstrap Angular</a>\n                </p>\n            </div> -->\n            <!--/.Second column-->\n\n            <!--Third column-->\n            <!-- <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>Useful links</strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-4 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Your Account</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Become an Affiliate</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Shipping Rates</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Help</a>\n                </p>\n            </div> -->\n            <!--/.Third column-->\n\n            <!--Fourth column-->\n            <div class=\"col-md-6 col-lg-6 col-xl-5 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>Contacto</strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-4 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p>\n                    <i class=\"fa fa-home mr-3\"></i> Alajuela, Alajuela Costa Rica</p>\n                <p>\n                    <i class=\"fa fa-envelope mr-3\"></i> info@DBSoft.com</p>\n                <p>\n                    <i class=\"fa fa-phone mr-3\"></i> +506 87194292</p>\n            </div>\n            <!--/.Fourth column-->\n\n        </div>\n    </div>\n    <!--/.Footer Links-->\n\n    <!-- Copyright-->\n    <div style=\"background-color: #9bce9b;\" class=\"footer-copyright py-2 text-center\">\n        © 2018 Copyright:\n        <a class=\"footer-copyright py-3 text-center\" href=\"https://www.linkedin.com/in/david-villalobos-madrigal\" target=\"_blank\">David Villalobos Madrigal.</a>\n    </div>\n    <!--/.Copyright -->\n\n</footer>\n<!--/.Footer-->\n\n                      "
+module.exports = "<!--Footer-->\n<footer class=\"page-footer font-small blue-grey lighten-5 pt-0\">\n\n    <div style=\"background-color:#9bce9b;\">\n        <div class=\"container \">\n            <!--Grid row-->\n            <div class=\"row py-2 d-flex align-items-center\">\n\n                <!--Grid column-->\n                <div class=\"col-12 col-md-5 text-left mb-2 mb-md-0 mt-0\">\n                    <h6 class=\"mb-0 white-text text-center text-md-left\">\n                        <strong>Siguenos en redes sociales!</strong>\n                    </h6>\n                </div>\n                <!--Grid column-->\n\n                <!--Grid column-->\n                <div class=\"col-12 col-md-7  text-center text-md-right\">\n                    <!--Facebook-->\n                    <a class=\"a_facebook fb-ic ml-0\" href=\"https://www.facebook.com/kulukcostarica/\" target=\"_blank\">\n                        <i class=\"fa fa-facebook-square mr-lg-4\"> </i>\n                    </a>\n                    <!--Twitter-->\n                    <a class=\"a_twitter tw-ic\">\n                        <i class=\"a_twitter fa fa-twitter white-text mr-lg-4\"> </i>\n                    </a>\n                    <!--Google +-->\n                    <a class=\"a_google_plus  gplus-ic\">\n                        <i class=\"a_google_plus fa fa-google-plus white-text mr-lg-4\"> </i>\n                    </a>\n                    <!--Linkedin-->\n                    <a class=\"a_linkedin li-ic\">\n                        <i class=\"a_linkedin fa fa-linkedin white-text mr-lg-4\"> </i>\n                    </a>\n                    <!--Instagram-->\n                    <a class=\"a_instagram  ins-ic\" href=\"https://www.instagram.com/kulukcostarica/?hl=en\" target=\"_blank\">\n                        <i class=\"fa fa-instagram white-text mr-lg-4\"> </i>\n                    </a>\n                </div>\n                <!--Grid column-->\n\n            </div>\n            <!--Grid row-->\n        </div>\n    </div>\n\n    <!--Footer Links-->\n    <div class=\"container mt-3 mb-3 text-center text-md-left\">\n        <div class=\"row mt-2\">\n\n            <!--First column-->\n            <div class=\"col-md-6 col-lg-6 col-xl-6 mb-4 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>D&B Soft | Ingenieria & soluciones a tu alcance!! </strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-2 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p></p>\n            </div>\n            <!--/.First column-->\n\n            <!--Second column-->\n            <!-- <div class=\"col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>Products</strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-4 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">MDBootstrap</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">MDWordPress</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">BrandFlow</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Bootstrap Angular</a>\n                </p>\n            </div> -->\n            <!--/.Second column-->\n\n            <!--Third column-->\n            <!-- <div class=\"col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>Useful links</strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-4 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Your Account</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Become an Affiliate</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Shipping Rates</a>\n                </p>\n                <p>\n                    <a href=\"#!\" class=\"dark-grey-text\">Help</a>\n                </p>\n            </div> -->\n            <!--/.Third column-->\n\n            <!--Fourth column-->\n            <div class=\"col-md-6 col-lg-6 col-xl-5 dark-grey-text\">\n                <h6 class=\"text-uppercase font-weight-bold\">\n                    <strong>Contacto</strong>\n                </h6>\n                <hr class=\"teal accent-3 mb-4 mt-0 d-inline-block mx-auto\" style=\"width: 60px;\">\n                <p>\n                    <i class=\"fa fa-home mr-3\"></i> Alajuela, Alajuela Costa Rica</p>\n                <p>\n                    <i class=\"fa fa-envelope mr-3\"></i> info@DBSoft.com</p>\n                <p>\n                    <i class=\"fa fa-phone mr-3\"></i> +506 87194292</p>\n            </div>\n            <!--/.Fourth column-->\n\n        </div>\n    </div>\n    <!--/.Footer Links-->\n\n    <!-- Copyright-->\n    <div style=\"background-color: #9bce9b;\" class=\"footer-copyright py-2 text-center\">\n        © 2018 Copyright:\n        <a class=\"footer-copyright py-3 text-center\" href=\"https://www.linkedin.com/in/david-villalobos-madrigal\" target=\"_blank\">David Villalobos Madrigal.</a>\n    </div>\n    <!--/.Copyright -->\n\n</footer>\n<!--/.Footer-->\n\n                      "
 
 /***/ }),
 
@@ -1058,7 +1117,7 @@ module.exports = ".active {\n\ttext-decoration: underline;\n}\n\n.routes {\n\tpa
 /***/ "./src/app/nav/nav.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-md navbar-light bg-faded\">\n  <a class=\"navbar-brand\" href=\"#\">DBSoft</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\" >\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\"  routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\" >Inicio <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\"  routerLink=\"/productos\" routerLinkActive=\"active\">Productos</a>\n      </li>\n      <li class=\"nav-item\">\n         <a class=\"nav-link\"  routerLink=\"/lugares\" routerLinkActive=\"active\">Encuentranos</a>\n      </li>   \n      <li class=\"nav-item\">\n          <a *ngIf=\"islogged\" class=\"nav-link\"  routerLink=\"/usuarios\"  routerLinkActive=\"active\">Usuarios</a>\n      </li>    \n      <li class=\"nav-item\">\n          <a class=\"nav-link disabled\" routerLink=\"/about\" routerLinkActive=\"active\">Acerca</a>\n      </li>    \n            <!-- Dropdown -->\n            <li class=\"nav-item dropdown\"  *ngIf=\"islogged\">\n              <a class=\"nav-link dropdown-toggle\" href=\"#\"  data-toggle=\"dropdown\" >\n                Mantenimiento\n              </a>\n              <div class=\"dropdown-menu\">\n                <a class=\"dropdown-item\" routerLink=\"/slider\" routerLinkActive=\"active\">Carousel</a>\n                <a class=\"dropdown-item\" href=\"#\">Link 2</a>\n                <a class=\"dropdown-item\" href=\"#\">Link 3</a>\n              </div>\n            </li>\n            <!--\n      <li class=\"nav-item\">\n         <a class=\"nav-link disabled\" routerLink=\"/info\" routerLinkActive=\"active\">Info</a>\n      </li>\n      -->\n      <li class=\"nav-item\">\n         <a class=\"nav-link\" routerLink=\"/usuariologin\" routerLinkActive=\"active\" ><span *ngIf=\"!islogged\">Acceder</span><span *ngIf=\"islogged\">Salir</span></a> \n      </li>      \n    </ul>\n  </div>  \n</nav>\n<br>\n\n\n\n"
+module.exports = "<nav class=\"navbar navbar-expand-md navbar-light bg-faded\">\n  <a class=\"navbar-brand\" href=\"#\">D&B Soft</a>\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapsibleNavbar\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"collapsibleNavbar\" >\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a class=\"nav-link\"  routerLink=\"/\" routerLinkActive=\"active\" [routerLinkActiveOptions]=\"{exact: true}\" >Inicio <span class=\"sr-only\">(current)</span></a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\"  routerLink=\"/productos\" routerLinkActive=\"active\">Productos</a>\n      </li>\n      <li class=\"nav-item\">\n        <a class=\"nav-link\"  routerLink=\"/factura\" routerLinkActive=\"active\">Factura</a>\n      </li>\n      <li class=\"nav-item\">\n         <a class=\"nav-link\"  routerLink=\"/lugares\" routerLinkActive=\"active\">Encuentranos</a>\n      </li>   \n      <li class=\"nav-item\">\n          <a *ngIf=\"islogged\" class=\"nav-link\"  routerLink=\"/usuarios\"  routerLinkActive=\"active\">Usuarios</a>\n      </li>    \n      <li class=\"nav-item\">\n          <a class=\"nav-link disabled\" routerLink=\"/about\" routerLinkActive=\"active\">Acerca</a>\n      </li>    \n            <!-- Dropdown -->\n            <li class=\"nav-item dropdown\"  *ngIf=\"islogged\">\n              <a class=\"nav-link dropdown-toggle\" href=\"#\"  data-toggle=\"dropdown\" >\n                Mantenimiento\n              </a>\n              <div class=\"dropdown-menu\">\n                <a class=\"dropdown-item\" routerLink=\"/slider\" routerLinkActive=\"active\">Carousel</a>\n                <a class=\"dropdown-item\" href=\"#\">Link 2</a>\n                <a class=\"dropdown-item\" href=\"#\">Link 3</a>\n              </div>\n            </li>\n            <!--\n      <li class=\"nav-item\">\n         <a class=\"nav-link disabled\" routerLink=\"/info\" routerLinkActive=\"active\">Info</a>\n      </li>\n      -->\n      <li class=\"nav-item\">\n         <a class=\"nav-link\" routerLink=\"/usuariologin\" routerLinkActive=\"active\" ><span *ngIf=\"!islogged\">Acceder</span><span *ngIf=\"islogged\">Salir</span></a> \n      </li>      \n    </ul>\n  </div>  \n</nav>\n<br>\n\n\n\n"
 
 /***/ }),
 

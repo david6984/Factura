@@ -26,6 +26,7 @@ import { SliderComponent } from './slider/slider.component';
 import { LoginComponent } from './login/login.component';
 import { SliderAgregarComponent } from './slider/slider-agregar/slider-agregar.component';
 import { SliderDisplayComponent } from './slider/slider-display/slider-display.component';
+import { FacturaComponent } from './factura/factura.component';
 
 //servicios creados deben ser agregados en los providers 
 import { ProductosService } from './services/productos.service';
@@ -37,6 +38,7 @@ import { SliderService } from './services/slider.service';
 import { TextContainsValidator } from './shared/text-contains.directive';
 import {Ng2CarouselamosModule} from 'ng2-carouselamos';
 import { DatasharingService } from './services/datasharing.service';
+
 
 
 
@@ -64,7 +66,8 @@ import { DatasharingService } from './services/datasharing.service';
     LoginComponent,
     CarouselComponent,
     SliderAgregarComponent,
-    SliderDisplayComponent
+    SliderDisplayComponent,
+    FacturaComponent
 
   ],
   imports: [

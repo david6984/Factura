@@ -9,6 +9,7 @@ import { LugaresComponent } from './lugares/lugares.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { NavComponent } from './nav/nav.component';
+import { FacturaComponent } from './factura/factura.component';
 
 
 export const ROUTES: Routes = [
@@ -47,6 +48,10 @@ export const ROUTES: Routes = [
     { 
         path: 'footer',  
         component: FooterComponent
+    },
+    { 
+        path: 'factura',  
+        component: FacturaComponent
     },
     { 
         path: '**', 
