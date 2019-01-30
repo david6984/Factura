@@ -39,6 +39,7 @@ import { SliderService } from './services/slider.service';
 import { TextContainsValidator } from './shared/text-contains.directive';
 import {Ng2CarouselamosModule} from 'ng2-carouselamos';
 import { DatasharingService } from './services/datasharing.service';
+import { CurrencyComponent } from './currency/currency.component';
 
 
 
@@ -68,7 +69,8 @@ import { DatasharingService } from './services/datasharing.service';
     CarouselComponent,
     SliderAgregarComponent,
     SliderDisplayComponent,
-    FacturaComponent
+    FacturaComponent,
+    CurrencyComponent
 
   ],
   imports: [

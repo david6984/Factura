@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { NavComponent } from './nav/nav.component';
 import { FacturaComponent } from './factura/factura.component';
+import { CurrencyComponent } from './currency/currency.component';
 
 
 export const ROUTES: Routes = [
@@ -52,6 +53,10 @@ export const ROUTES: Routes = [
     { 
         path: 'factura',  
         component: FacturaComponent
+    },
+    { 
+        path: 'currency',  
+        component: CurrencyComponent
     },
     { 
         path: '**', 
