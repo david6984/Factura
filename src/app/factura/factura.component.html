@@ -43,7 +43,7 @@
         <div class="input-container" data-ng-hide='printMode'>
             <!--<select class='select-option' required [(ngModel)]='currencySymbol' (ngModelChange)='onOptionsSelected($event)'>-->
                 <select class='select-option'>
-                <option class='option' *ngFor='let currency of currencies' [value]="currency">{{currency.name+ - + currency.symbol}}</option>
+                <option class='option' *ngFor='let currency of currencies' [value]="currency">{{ (currency.name+ - + currency.symbol)}}</option>
             </select>
           <!--<select ng-model='currencySymbol' ng-options='currency.symbol as (currency.name+ - + currency.symbol) for currency in availableCurrencies'></select>-->
         </div>
