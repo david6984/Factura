@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Currency } from '../models/currency';
-import { ProductosService } from '../services/productos.service';
 import { AuthService } from '../services/auth.service';
+import { CurrencyService } from '../services/currency.service';
 
 
 @Component({
@@ -12,9 +12,24 @@ import { AuthService } from '../services/auth.service';
 export class FacturaComponent implements OnInit {
   public currencies : Currency[];
 
-  constructor() { }
+  constructor(private currencyService: CurrencyService) { }
 
   ngOnInit() {
+    this.obtenerCurrencies();
   }
+
+  public obtenerCurrencies(){
+		this.currencyService.obtenerCurrency().subscribe((data) => {
+				this.currencies = data.currency;
+			},(error)=>{
+				console.log('error',error);
+			});
+			// .then(data => {
+			// 	this.productos = data.product;
+			// })
+			// .catch(error => {
+			// 	console.log('error',error);
+			// });
+	}
   
 }
