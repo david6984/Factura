@@ -29,6 +29,8 @@ import { SliderAgregarComponent } from './slider/slider-agregar/slider-agregar.c
 import { SliderDisplayComponent } from './slider/slider-display/slider-display.component';
 import { FacturaComponent } from './factura/factura.component';
 import { CurrencyComponent } from './currency/currency.component';
+import { CurrencyAgregarComponent } from './currency/currency-agregar/currency-agregar.component';
+import { CurrencyDisplayComponent } from './currency/currency-display/currency-display.component';
 
 //servicios creados deben ser agregados en los providers 
 import { ProductosService } from './services/productos.service';
@@ -41,6 +43,7 @@ import { TextContainsValidator } from './shared/text-contains.directive';
 import {Ng2CarouselamosModule} from 'ng2-carouselamos';
 import { DatasharingService } from './services/datasharing.service';
 import { CurrencyService } from './services/currency.service';
+
 
 
 
@@ -71,7 +74,9 @@ import { CurrencyService } from './services/currency.service';
     SliderAgregarComponent,
     SliderDisplayComponent,
     FacturaComponent,
-    CurrencyComponent
+    CurrencyComponent,
+    CurrencyAgregarComponent,
+    CurrencyDisplayComponent
 
   ],
   imports: [
