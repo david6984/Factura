@@ -9,23 +9,23 @@ import { CurrencyService } from '../../services/currency.service';
 })
 export class CurrencyAgregarComponent implements OnInit,OnChanges {
 
-  @Output() agregarLugar = new EventEmitter<any>();
-	@Output() editarLugar = new EventEmitter<any>();
+  @Output() agregarCurrency = new EventEmitter<any>();
+	@Output() editarCurrency = new EventEmitter<any>();
 	@Input() canAdd : boolean = true;
-	@Input('selectedCiurrency') currency : Currency = new Currency();
+	@Input('selectedCurrency') currency : Currency = new Currency();
 	submitted = false;
 	requiredText : string = '';
 	isEditing = false;
 
 	onSubmit(currencyForm) {
 		if(this.isEditing){
-			this.editarLugar.emit({
+			this.editarCurrency.emit({
 				'lugar':this.currency,
 				'form':currencyForm
 			});
 			this.isEditing = false;
 		} else {
-			this.agregarLugar.emit({
+			this.agregarCurrency.emit({
 				'lugar':this.currency,
 				'form':currencyForm
 			});
