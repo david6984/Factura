@@ -5,7 +5,7 @@
 		required
 		[text-contains-validator]="requiredText"
 		[(ngModel)]="currency.name" name="name"
-		#nombre="ngModel">
+		#name="ngModel">
 		<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
 			<div *ngIf="name.errors && name.errors.required">
 				El Nombre es requerido
@@ -18,7 +18,7 @@
 	<div class="form-group">
 		<label for="symbol">Symbol</label>
 		<input type="text" class="form-control" id="symbol"
-		[(ngModel)]="currency.symbol" name="symbol" #provincia="ngModel" required>
+		[(ngModel)]="currency.symbol" name="symbol" #symbol="ngModel" required>
 		<div [hidden]="symbol.valid || symbol.pristine" class="alert alert-danger">
 			el simbolo de la moneda es requerido
 		</div>
