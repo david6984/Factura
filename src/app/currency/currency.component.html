@@ -10,7 +10,7 @@
 			</div>
 		</ul>
 		<ul class="col-12">
-			<li *ngFor="let currency of currency" class="row currency-display">
+			<li *ngFor="let currencies of currency" class="row currency-display">
 				<app-currency-display [currency]='currency' (borrarCurrency)="borrarCurrency($event)" (editarCurrency)="editarCurrency($event)" class="col-12 col-lg-8"  ></app-currency-display>
 			</li>
 		</ul>	
