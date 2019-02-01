@@ -16,11 +16,13 @@ export class FacturaComponent implements OnInit {
 
   ngOnInit() {
     this.obtenerCurrencies();
+    console.log('Entro al on init');
   }
 
   public obtenerCurrencies(){
 		this.currencyService.obtenerCurrency().subscribe((data) => {
-				this.currencies = data.currency;
+        this.currencies = data.currency;
+        console.log('debmos tener currency list',this.currencies);
 			},(error)=>{
 				console.log('error',error);
 			});
