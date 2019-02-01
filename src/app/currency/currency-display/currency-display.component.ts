@@ -10,9 +10,9 @@ import { AuthService } from '../../services/auth.service';
 })
 export class CurrencyDisplayComponent implements OnInit {
 
-  @Input() currency : Currency;
-	@Output() borrarLugar = new EventEmitter<Currency>();
-	@Output() editarLugar = new EventEmitter<Currency>();
+  	@Input() currency : Currency;
+	@Output() borrarCurrency = new EventEmitter<Currency>();
+	@Output() editarCurrency = new EventEmitter<Currency>();
 	@Output() isEditingOut= new EventEmitter();
 	public isDeleting = false;
 	public isEditing = false;
@@ -33,13 +33,13 @@ export class CurrencyDisplayComponent implements OnInit {
 
 	borrar(){
 		this.isDeleting = true;
-		this.borrarLugar.emit(this.currency);
+		this.borrarCurrency.emit(this.currency);
 		console.log(this.currency);
 	}
 
 
 	editar(){
-		this.editarLugar.emit(this.currency);
+		this.editarCurrency.emit(this.currency);
 	}
 
 }

@@ -10,7 +10,7 @@ import { AuthService } from '../services/auth.service';
 })
 export class CurrencyComponent implements OnInit {
 
-  public currencies : Currency[];
+  	public currencies : Currency[];
 	public selectedCurrency : Currency = new Currency;
 	public loading : boolean = false;
 	public islogged : boolean = false;
