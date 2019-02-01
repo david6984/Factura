@@ -69,7 +69,7 @@ export class CurrencyComponent implements OnInit {
 			// });
 	}
 
-	public agregarLugar(currency:any){
+	public agregarCurrency(currency:any){
 		this.loading = true;
 		this.currencyService.agregarCurrency(currency.currency)
 			.then(data => {

@@ -1,3 +1,18 @@
-<p>
-  currency works!
-</p>
+<div class="currency">
+	<div class="page-title row text-center">
+		<h2 class="col-5">Tipo de moneda</h2>
+	</div>
+	<div class="places row">
+		<ul class="col-12 col-lg-8">
+			<app-currency-agregar *ngIf="islogged" (agregarCurrency)="agregarCurrency($event)" (editarCurrency)="editarCurrencySave($event)" [selectedCurrency]="selectedCurrency" [canAdd]='!loading'></app-currency-agregar>
+			<div *ngIf="loading">
+				loading...
+			</div>
+		</ul>
+		<ul class="col-12">
+			<li *ngFor="let currency of currency" class="row currency-display">
+				<app-currency-display [currency]='currency' (borrarCurrency)="borrarCurrency($event)" (editarCurrency)="editarCurrency($event)" class="col-12 col-lg-8"  ></app-currency-display>
+			</li>
+		</ul>	
+	</div>
+</div>

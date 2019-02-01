@@ -20,13 +20,13 @@ export class CurrencyAgregarComponent implements OnInit,OnChanges {
 	onSubmit(currencyForm) {
 		if(this.isEditing){
 			this.editarCurrency.emit({
-				'lugar':this.currency,
+				'currency':this.currency,
 				'form':currencyForm
 			});
 			this.isEditing = false;
 		} else {
 			this.agregarCurrency.emit({
-				'lugar':this.currency,
+				'currency':this.currency,
 				'form':currencyForm
 			});
 		}
