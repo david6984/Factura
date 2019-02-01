@@ -47,7 +47,7 @@ export class CurrencyAgregarComponent implements OnInit,OnChanges {
 		}
 	}
 
-	newLugar(){
+	newCurrency(){
 		this.submitted = false; 
 		this.isEditing = false;
 		this.currency = new Currency();
