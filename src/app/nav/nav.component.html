@@ -11,8 +11,15 @@
       <li class="nav-item">
         <a class="nav-link"  routerLink="/productos" routerLinkActive="active">Productos</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link"  routerLink="/factura" routerLinkActive="active">Factura</a>
+      <li class="nav-item dropdown"  *ngIf="islogged">
+        <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" >
+          Facturacion
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="/factura" routerLinkActive="active">Factura</a>
+          <a class="dropdown-item" routerLink="/currency" routerLinkActive="active">Currency</a>
+          <a class="dropdown-item" href="#">Condiciones de Venta</a>
+        </div>
       </li>
       <li class="nav-item">
          <a class="nav-link"  routerLink="/lugares" routerLinkActive="active">Encuentranos</a>
@@ -30,8 +37,6 @@
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" routerLink="/slider" routerLinkActive="active">Carousel</a>
-                <a class="dropdown-item" routerLink="/currency" routerLinkActive="active">Currency</a>
-                <a class="dropdown-item" href="#">Link 3</a>
               </div>
             </li>
             <!--

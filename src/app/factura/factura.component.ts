@@ -32,6 +32,10 @@ export class FacturaComponent implements OnInit {
 			// .catch(error => {
 			// 	console.log('error',error);
 			// });
-	}
+  }
+  
+  onOptionSelected(event){
+    console.log(event); //option value will be sent as event
+   }
   
 }
