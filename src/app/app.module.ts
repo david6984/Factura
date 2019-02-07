@@ -43,6 +43,7 @@ import { TextContainsValidator } from './shared/text-contains.directive';
 import {Ng2CarouselamosModule} from 'ng2-carouselamos';
 import { DatasharingService } from './services/datasharing.service';
 import { CurrencyService } from './services/currency.service';
+import { CondicionventaComponent } from './condicionventa/condicionventa.component';
 
 
 
@@ -76,7 +77,8 @@ import { CurrencyService } from './services/currency.service';
     FacturaComponent,
     CurrencyComponent,
     CurrencyAgregarComponent,
-    CurrencyDisplayComponent
+    CurrencyDisplayComponent,
+    CondicionventaComponent
 
   ],
   imports: [
