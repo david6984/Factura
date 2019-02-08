@@ -24,14 +24,8 @@
         </div>
       </li>
       <li class="nav-item">
-         <a class="nav-link"  routerLink="/lugares" routerLinkActive="active">Encuentranos</a>
-      </li>   
-      <li class="nav-item">
           <a *ngIf="islogged" class="nav-link"  routerLink="/usuarios"  routerLinkActive="active">Usuarios</a>
-      </li>    
-      <li class="nav-item">
-          <a class="nav-link disabled" routerLink="/about" routerLinkActive="active">Acerca</a>
-      </li>    
+      </li>      
             <!-- Dropdown -->
             <li class="nav-item dropdown"  *ngIf="islogged">
               <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown" >
@@ -46,6 +40,12 @@
          <a class="nav-link disabled" routerLink="/info" routerLinkActive="active">Info</a>
       </li>
       -->
+      <li class="nav-item">
+          <a class="nav-link"  routerLink="/lugares" routerLinkActive="active">Encuentranos</a>
+       </li>   
+       <li class="nav-item">
+          <a class="nav-link disabled" routerLink="/about" routerLinkActive="active">Acerca</a>
+      </li>  
       <li class="nav-item">
          <a class="nav-link" routerLink="/usuariologin" routerLinkActive="active" ><span *ngIf="!islogged">Acceder</span><span *ngIf="islogged">Salir</span></a> 
       </li>      
